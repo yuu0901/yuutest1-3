@@ -12,7 +12,7 @@ header{
 img{
   max-width: 100%;
 }
-.conteiner{
+.container{
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
@@ -23,6 +23,7 @@ img{
 }
 
 nav ul li{
+  list-style: none;
   display: inline;
 }
 nav{
@@ -30,12 +31,11 @@ nav{
   margin-bottom: 30px;
 }
 nav li a{
-  text-decoration: none;
   padding: 15px 30px;
+  text-decoration: none;
   color: #666;
 }
-nav ul li a:hover{
-  color: #d08047;
+nav ul li:hover{
   border-bottom: 4px solid #d08047;
 }
 h2{
@@ -85,4 +85,18 @@ footer a{
 }
 footer a:hover{
   color: #d08047;
+}
+
+
+
+@media screen and (max-width:500px){
+  nav ul li{
+   display: flex;
+   flex-direction: column;
+  }
+
+  nav ul li:hover{
+    display: inline-block;
+    border-bottom: 4px solid #d08047;
+  }
 }
